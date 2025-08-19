@@ -1,11 +1,24 @@
-# AL-Go Per Tenant Extension Template
+# COMI
+APP de gestion de comisiones
+🛑 Esta APP se ha compilado con una versión BC140, no se ha revisado para BC130 o versiones posteriores
 
-This template repository can be used for managing AppSource Apps for Business Central.
+## Lista de cosas pendientes
+# dejar campos con nombres estandares y traducciones
+# permisos de usuario al consultar solo sus comisiones
+# añadir mov comisiones en procesar de Navegar
+# opcion de cambiar importe comision en vez de usar %
+# tomar en cuenta importes de descuento linea, factura y pronto pago
+# controlar divisa proveedor (poco probable)
+# proceso de retencion de lo vencido no cobrado
+# poder crear registros manuales de comision
+# registros por producto o por documento
+# liquidar lo cobrado (como marca en las lineas)
+# diferencia cambio con lo cobrado
 
-Please go to https://aka.ms/AL-Go to learn more.
+## Historial de versiones
 
-## Contributing
+# 20240704
+    Cambio rango a 7268940
 
-Please read [this](https://github.com/microsoft/AL-Go/blob/main/Scenarios/Contribute.md) description on how to contribute to AL-Go for GitHub.
-
-We do not accept Pull Requests on the template repository directly.
+# 20240510
+    version inicial sin probar
