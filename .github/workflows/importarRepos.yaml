@@ -17,7 +17,7 @@ jobs:
         - name: Checkout
           uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
           with:
-            token: ${{ github.token }}
+            token: ${{ secrets.ghTokenWorkflow }}
 
         - name: Configurar identidad de Git
           run: |
@@ -27,7 +27,7 @@ jobs:
         - name: Importar repositorio
           shell: pwsh
           run: |
-            $url = "https://${{github.actor}}:${{secrets.GitLabToken}}@gitlab.com/${{github.event.inputs.URL}}"
+            $url = "https://${{secrets.GitLabToken}}@gitlab.com/${{github.event.inputs.URL}}"
 
             git remote add oldRepo $url
             git fetch oldRepo
@@ -58,4 +58,4 @@ jobs:
           run: | 
             git add .
             git commit -m "Importar repositorio desde ${{github.event.inputs.URL}}"
-            git push origin main
+            git push 
