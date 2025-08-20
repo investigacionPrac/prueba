@@ -19,7 +19,7 @@
       "version": "1.20220606.0.0"
     }
   ],
-  "_comentario": "esto es una prueba de comentarios <<<<<<<<<<"
+  "_comentario": "esto es una prueba de comentarios <<<<<<<<<<",
   "screenshots": [],
   "platform": "1.0.0.0",
   "application": "13.0.0.0",
